@@ -28,7 +28,7 @@ public class UtestStepDefinitions {
 
     @When("^assignee city and password continue use$")
     public void assigneeCityAndPasswordContinueUse(List<UtestData> utestData) throws Exception{
-        OnStage.theActorInTheSpotlight().wasAbleTo(Location.onThePage(utestData.get(0).getStrCity(), utestData.get(0).getStrZip()));
+        OnStage.theActorInTheSpotlight().wasAbleTo(Location.onThePage(utestData.get(0).getStrCity(), utestData.get(0).getStrZip(), utestData.get(0).getStrCountry()));
         OnStage.theActorInTheSpotlight().wasAbleTo(Devices.onThePage());
         OnStage.theActorInTheSpotlight().attemptsTo(Password.the(utestData.get(0).getStrPassword(), utestData.get(0).getStrConfirmPassword()));
     }

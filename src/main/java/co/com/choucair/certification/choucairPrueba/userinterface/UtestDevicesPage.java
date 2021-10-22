@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 public class UtestDevicesPage extends PageObject {
 
-    public static final Target INPUT_BRAND = Target.the("Input space brand").located(By.id("brand"));
+    public static final Target INPUT_BRAND = Target.the("Input space brand").located(By.xpath("//div[contains(@class,'btn btn-blue pull-right')]"));
     public static final Target INPUT_MODEL = Target.the("Input space model").located(By.id("model"));
     public static final Target INPUT_OS = Target.the("Input space OS").located(By.id("os"));
 

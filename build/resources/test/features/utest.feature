@@ -9,8 +9,8 @@ Feature: create user Utest.com for choucair login test
     | strFirstName   | strLastName | strEmailAddress         | month | day | year | lang    |
     | Carlos Alberto | Lopez Mazo  | jabari73b_j31c@pebih.com | July  | 14  | 1997 | spanish |
     When assignee city and password continue use
-    | strPassword | strConfirmPassword | strCity | strZip |
-    | 1357Carl+*   | 1357Carl+*        | Armenia | 630001 |
+    | strPassword | strConfirmPassword | strCity | strZip | strCountry |
+    | 1357Carl+*   | 1357Carl+*        | Armenia | 630001 | Colombia |
     Then he finds the page init
     | strConfirmPage |
     | Aun no lo se   |

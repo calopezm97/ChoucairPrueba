@@ -13,6 +13,15 @@ public class UtestData {
     private String strConfirmPage;
     private String strCity;
     private String strZip;
+    private String strCountry;
+
+    public String getStrCountry() {
+        return strCountry;
+    }
+
+    public void setStrCountry(String strCountry) {
+        this.strCountry = strCountry;
+    }
 
     public String getStrCity() {
         return strCity;

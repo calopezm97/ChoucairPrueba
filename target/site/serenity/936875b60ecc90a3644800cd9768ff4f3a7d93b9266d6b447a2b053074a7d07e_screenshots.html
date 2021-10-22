@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-10-2021 10:47</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-10-2021 15:29</span>
     <br style="clear:left"/>
 </div>
 
@@ -179,9 +179,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">Create new user in Utest.com
+                                <span class="error-color">Create new user in Utest.com
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -204,7 +204,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                    <span class="error-message error-message-title">Element not interactable exception: element not interactable</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -220,20 +220,13 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                    <h4>org.openqa.selenium.ElementNotInteractableException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>co.com.choucair.certification.choucairPrueba.tasks.Password.performAs(Password.java:26)<br />co.com.choucair.certification.choucairPrueba.stepdefinitions.UtestStepDefinitions.assigneeCityAndPasswordContinueUse(UtestStepDefinitions.java:33)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                        <pre>co.com.choucair.certification.choucairPrueba.tasks.Location.performAs(Location.java:34)<br />co.com.choucair.certification.choucairPrueba.stepdefinitions.UtestStepDefinitions.assigneeCityAndPasswordContinueUse(UtestStepDefinitions.java:31)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
                     </div>
 
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for By.xpath: //a[contains(@class,'btn btn-blue pull-right')] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                        <pre>co.com.choucair.certification.choucairPrueba.tasks.Password.performAs(Password.java :26)<br />co.com.choucair.certification.choucairPrueba.stepdefinitions.UtestStepDefinitions.assigneeCityAndPasswordContinueUse(UtestStepDefinitions.java :33)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
-                    </div>
                 </div>
             </div>
         </div>
@@ -241,7 +234,7 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource7617566714914273380.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource6112265891733014728.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
@@ -252,38 +245,29 @@
                 <img src="bfb30eec40de05dd1a6445c78340038894069d922d6422ed79b78174e15569e2.png" title=" Carlos open up" width="1920"/>
                 <img src="bfb30eec40de05dd1a6445c78340038894069d922d6422ed79b78174e15569e2.png" title=" Carlos opens the Utest home page" width="1920"/>
                 <img src="bfb30eec40de05dd1a6445c78340038894069d922d6422ed79b78174e15569e2.png" title=" Carlos open up (completed)" width="1920"/>
-                <img src="df14e34156056c1ae32f3add5b1ce219cf519ccf4b855440ddbb9d190d52fde5.png" title=" Carlos register" width="1920"/>
-                <img src="df14e34156056c1ae32f3add5b1ce219cf519ccf4b855440ddbb9d190d52fde5.png" title=" Carlos clicks on Button that shows us the form to login" width="1920"/>
+                <img src="541b0e56ec36a758173524105a8334c02ab94559c4a428ae60dc64ef3585a2d0.png" title=" Carlos register" width="1920"/>
+                <img src="541b0e56ec36a758173524105a8334c02ab94559c4a428ae60dc64ef3585a2d0.png" title=" Carlos clicks on Button that shows us the form to login" width="1920"/>
                 <img src="a954fdbfb26f709081156eb6af1538a0382733de7c362d63e67ab64a20492b0a.png" title=" Carlos enters 'Carlos Alberto' into Input space first name" width="1920"/>
-                <img src="e75c628ffd892d88f396678dea93f66cb5e811b9389e97c5766fa634ebdcce30.png" title=" Carlos enters 'Lopez Mazo' into Input space last name" width="1920"/>
-                <img src="887005ae44dc1016eedf754f6a4ea50c6a3c6a59ec6739d867cc1a2916aa7af0.png" title=" Carlos enters 'jabari73b_j31c@pebih.com' into Input space email" width="1920"/>
+                <img src="4b7ba1849cc94509acb5ea1926b1131b63856416053fafb9903fec8b56810134.png" title=" Carlos enters 'Lopez Mazo' into Input space last name" width="1920"/>
+                <img src="d19bc464f63cc5c39f84f06f1bcdf3a7aebfc653e720dd8e8ea8ffefbe5547da.png" title=" Carlos enters 'jabari73b_j31c@pebih.com' into Input space email" width="1920"/>
                 <img src="622b0dbc7bf106105c84a91befa266cd301e530ad0718cbe0bbd9efad87e30ba.png" title=" Carlos enters '14' into Input space birth day" width="1920"/>
-                <img src="68aa35b3f0f78da6a3e0d918ae920710bb5cce4017a060bd7d11af12f7ab1bfc.png" title=" Carlos enters 'July' into Input space birth month" width="1920"/>
+                <img src="fef0d65d5d162fc99036e6bb9f7bee475dc9abd4ca8971d99752aa204a9a0813.png" title=" Carlos enters 'July' into Input space birth month" width="1920"/>
                 <img src="4a6c7ddf4c672480feaad36dfc36623dc9660cefdfaec1ffb482d12992927c79.png" title=" Carlos enters '1997' into Input space birth year" width="1920"/>
-                <img src="0d2fa53f8acba6720ef9a362c27e144acdb88f216309907746f8a01943c074e5.png" title=" Carlos clicks on Button that shows us the form to login" width="1920"/>
-                <img src="0d2fa53f8acba6720ef9a362c27e144acdb88f216309907746f8a01943c074e5.png" title=" Carlos register (completed)" width="1920"/>
-                <img src="0d2fa53f8acba6720ef9a362c27e144acdb88f216309907746f8a01943c074e5.png" title=" Given than Carlos wants to create user in utest
+                <img src="d6ce026d09fa0c7a48ede2acaa1f10243d632755b9c8c3d160768e136275afbd.png" title=" Carlos clicks on Button that shows us the form to login" width="1920"/>
+                <img src="d6ce026d09fa0c7a48ede2acaa1f10243d632755b9c8c3d160768e136275afbd.png" title=" Carlos register (completed)" width="1920"/>
+                <img src="d6ce026d09fa0c7a48ede2acaa1f10243d632755b9c8c3d160768e136275afbd.png" title=" Given than Carlos wants to create user in utest
 | strFirstName | strLastName | strEmailAddress | month | day | year | lang |
 | Carlos Alberto | Lopez Mazo | jabari73b_j31c@pebih.com | July | 14 | 1997 | spanish | (completed)" width="1920"/>
-                <img src="1657b68ea16a6cc89f1171085866f6cae70ebbf16e1817f571cbad3c41a1c428.png" title=" When assignee city and password continue use
-| strPassword | strConfirmPassword | strCity | strZip |
-| 1357Carl+* | 1357Carl+* | Armenia | 630001 |" width="1920"/>
-                <img src="1657b68ea16a6cc89f1171085866f6cae70ebbf16e1817f571cbad3c41a1c428.png" title=" Carlos location" width="1920"/>
-                <img src="1657b68ea16a6cc89f1171085866f6cae70ebbf16e1817f571cbad3c41a1c428.png" title=" Carlos enters 'Armenia' into Input space city" width="1920"/>
-                <img src="429eed8fb48ea55f2a41b9ecb98a831eb0e6010d1a7f9fc05b76bbe2778d7663.png" title=" Carlos waiting" width="1920"/>
-                <img src="16cc27b170c880e7386d4238c9c7e9dfe49d988d105b72d879a4e237503e2dca.png" title=" Carlos enters 'Armenia' then hits DOWN and ENTER into Input space city" width="1920"/>
-                <img src="b112c28498f6c375d7ce77eb3e2825913df23e9a3cf1254420c3c776490dd1c2.png" title=" Carlos enters '630001' into Input space code zip" width="1920"/>
-                <img src="922e5fe6b491ae26dbd41a192fb275009491af2430f2d83204b13692f6a5ef4a.png" title=" Carlos clicks on Button that shows us the form to login" width="1920"/>
-                <img src="922e5fe6b491ae26dbd41a192fb275009491af2430f2d83204b13692f6a5ef4a.png" title=" Carlos location (completed)" width="1920"/>
-                <img src="d56521aa479544685913d5f800c82740a5bb5d75037c3d81a6162fb961c5fedc.png" title=" Carlos devices" width="1920"/>
-                <img src="d56521aa479544685913d5f800c82740a5bb5d75037c3d81a6162fb961c5fedc.png" title=" Carlos clicks on Button that shows us the form last step" width="1920"/>
-                <img src="d56521aa479544685913d5f800c82740a5bb5d75037c3d81a6162fb961c5fedc.png" title=" Carlos devices (completed)" width="1920"/>
-                <img src="80659b378da709ab314180f9d21e1257df870f63331012b7d066d220b2cb3bba.png" title=" Carlos password" width="1920"/>
-                <img src="80659b378da709ab314180f9d21e1257df870f63331012b7d066d220b2cb3bba.png" title=" Carlos clicks on Button that search course" width="1920"/>
-                <img src="124dcc1fdb5d8c36a65afd2233a8ec683066d68b932d1536edb834c2e1bb444a.png" title=" Carlos clicks on Select course" width="1920"/>
-                <img src="06d301c59bb8495bbf078a4aafaeb440352b47998b797c62c1e836ca4f3960c6.png" title=" Carlos enters '1357Carl+*' into input Password" width="1920"/>
-                <img src="68d0c841562b0667dfb6bf8580273e0551917e497cee46cc33611099e946677e.png" title=" Carlos enters '1357Carl+*' into input Confirm password" width="1920"/>
-                <img src="68d0c841562b0667dfb6bf8580273e0551917e497cee46cc33611099e946677e.png" title=" Carlos clicks on Button that shows us the form to login: <span class='failing-color'>FAILURE</span>" width="1920"/>
+                <img src="b94c22d174dfcd3928ea601a4ca9591e9c4426d1eaf0ab24aa9d2aeca65699f2.png" title=" When assignee city and password continue use
+| strPassword | strConfirmPassword | strCity | strZip | strCountry |
+| 1357Carl+* | 1357Carl+* | Armenia | 630001 | Colombia |" width="1920"/>
+                <img src="b94c22d174dfcd3928ea601a4ca9591e9c4426d1eaf0ab24aa9d2aeca65699f2.png" title=" Carlos location" width="1920"/>
+                <img src="b94c22d174dfcd3928ea601a4ca9591e9c4426d1eaf0ab24aa9d2aeca65699f2.png" title=" Carlos enters 'Armenia' into Input space city" width="1920"/>
+                <img src="b7e6addeff7693b542c559ee80e2143f8be6456eb61fe47275f7244fb9888bf0.png" title=" Carlos waiting" width="1920"/>
+                <img src="baf837d4e676f6465b6b6dd931600a8e9883d36013983fd631f1c263ba45935c.png" title=" Carlos types 'DOWN' in Input space city" width="1920"/>
+                <img src="188f10e02fc27229e469d405b1642ab25c1fe1c4237e25332bc48bd47bed509d.png" title=" Carlos types 'ENTER' in Input space city" width="1920"/>
+                <img src="e5896a5f5470864114e73e6afdb00a1ffe9fecc85f4bc4ea1f4f7d6b81214f06.png" title=" Carlos enters '630001' into Input space code zip" width="1920"/>
+                <img src="c58af167ae395e10eee26145a1ca39b9514cc17201cbb8df217545a5b79dfa13.png" title=" Carlos enters 'Colombia' into Input space country: <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 
