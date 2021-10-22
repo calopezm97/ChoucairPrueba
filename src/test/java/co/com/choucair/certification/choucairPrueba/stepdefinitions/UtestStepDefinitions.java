@@ -2,10 +2,7 @@ package co.com.choucair.certification.choucairPrueba.stepdefinitions;
 
 import co.com.choucair.certification.choucairPrueba.model.UtestData;
 import co.com.choucair.certification.choucairPrueba.questions.Answer;
-import co.com.choucair.certification.choucairPrueba.tasks.Location;
-import co.com.choucair.certification.choucairPrueba.tasks.Register;
-import co.com.choucair.certification.choucairPrueba.tasks.OpenUp;
-import co.com.choucair.certification.choucairPrueba.tasks.Password;
+import co.com.choucair.certification.choucairPrueba.tasks.*;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -25,13 +22,14 @@ public class UtestStepDefinitions {
 
     @Given("^than Carlos wants to create user in utest$")
     public void thanCarlosWantsToCreateUserInUtest(List<UtestData> utestData) throws Exception{
-        OnStage.theActorCalled("Carlos").wasAbleTo(OpenUp.thePage(), (Register.onThePage(utestData.get(0).getStrFirstName(), utestData.get(0).getStrLastName(), utestData.get(0).getDay(), utestData.get(0).getMonth(), utestData.get(0).getYear(), utestData.get(0).getStrEmailAddress())));
+        OnStage.theActorCalled("Carlos").wasAbleTo(OpenUp.thePage(), (Register.onThePage(utestData.get(0))));
     }
 
 
     @When("^assignee city and password continue use$")
     public void assigneeCityAndPasswordContinueUse(List<UtestData> utestData) throws Exception{
         OnStage.theActorInTheSpotlight().wasAbleTo(Location.onThePage(utestData.get(0).getStrCity(), utestData.get(0).getStrZip()));
+        OnStage.theActorInTheSpotlight().wasAbleTo(Devices.onThePage());
         OnStage.theActorInTheSpotlight().attemptsTo(Password.the(utestData.get(0).getStrPassword(), utestData.get(0).getStrConfirmPassword()));
     }
 

@@ -23,9 +23,10 @@ public class Password implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(UtestPasswordPage.CYC_BUTTON),
-                Enter.theValue(password).into(UtestPasswordPage.INPUT_SEARCH_COURSE),
-                Enter.theValue(confirmPassword).into(UtestPasswordPage.INPUT_SEARCH_COURSE),
-                Click.on(UtestPasswordPage.GO_BUTTON));
+        actor.attemptsTo(Click.on(UtestPasswordPage.CHECK_TERMS_OF_USE),
+                Click.on(UtestPasswordPage.CHECK_SECURITY_POLICY),
+                Enter.theValue(password).into(UtestPasswordPage.INPUT_PASS),
+                Enter.theValue(confirmPassword).into(UtestPasswordPage.INPUT_CONFIRM_PASS),
+                Click.on(UtestPasswordPage.BUTTON_COMPLETE_SETUP));
     }
 }

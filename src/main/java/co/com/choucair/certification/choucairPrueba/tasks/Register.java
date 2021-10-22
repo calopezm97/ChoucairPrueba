@@ -1,5 +1,6 @@
 package co.com.choucair.certification.choucairPrueba.tasks;
 
+import co.com.choucair.certification.choucairPrueba.model.UtestData;
 import co.com.choucair.certification.choucairPrueba.userinterface.UtestRegisterPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -16,6 +17,9 @@ public class Register implements Task {
     private String year;
     private String strEmail;
 
+    public static Register onThePage(UtestData utestData){
+        return Tasks.instrumented(Register.class, utestData.getStrFirstName(), utestData.getStrLastName(), utestData.getDay(), utestData.getMonth(), utestData.getYear(), utestData.getStrEmailAddress());
+    }
     public static Register onThePage(String strFirstName, String strLastName, String day, String month, String year, String strEmail) {
         return Tasks.instrumented(Register.class, strFirstName, strLastName, day, month, year, strEmail);
     }

@@ -18,7 +18,7 @@ public class Answer implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        String nameCourse = Text.of(UtestPasswordPage.SELECT_COURSE).viewedBy(actor).asString();
+        String nameCourse = Text.of(UtestPasswordPage.BUTTON_COMPLETE_SETUP).viewedBy(actor).asString();
         if (question.equals(nameCourse)) {
             return true;
         }else {
